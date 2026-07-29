@@ -25,7 +25,7 @@ inputEl.addEventListener("input", function () {
     }
 });
 
-btnEl.addEventListener("click", function a() {
+btnEl.addEventListener("click", function () {
     let userInput = document.getElementById("input-el").value
     let meter = userInput
     let feet = (meter * 3.281).toFixed(3)
@@ -33,12 +33,12 @@ btnEl.addEventListener("click", function a() {
     let meter2 = (feet2 * 0.3048).toFixed(3)
     if (meter > 1) {
         lengthTxt1 = `${meter} meters = ${feet} feet | `
-    }else {
+    } else {
         lengthTxt1 = `${meter} meter = ${feet} feet | `
     }
     if (feet2 > 1) {
         lengthTxt2 = `${feet2} feet = ${meter2} meters`
-    }else {
+    } else {
         lengthTxt2 = `${feet2} feet = ${meter2} meter`
     }
     lengthTxt.innerHTML = lengthTxt1 + lengthTxt2
@@ -49,12 +49,12 @@ btnEl.addEventListener("click", function a() {
     let liter2 = (gallon2 * 3.785).toFixed(3)
     if (liter > 1) {
         volumeTxt1 = `${liter} liters = ${gallon} gallons | `
-    }else {
+    } else {
         volumeTxt1 = `${liter} liter = ${gallon} gallon | `
     }
     if (gallon2 > 1) {
         volumeTxt2 = `${gallon2} gallons = ${liter2} liters`
-    }else {
+    } else {
         volumeTxt2 = `${gallon2} gallon = ${liter2} liter`
     }
     volumeTxt.innerHTML = volumeTxt1 + volumeTxt2
@@ -65,12 +65,12 @@ btnEl.addEventListener("click", function a() {
     let kilo2 = (pound2 * 0.453).toFixed(3)
     if (kilo > 1) {
         massTxt1 = `${kilo} kilos = ${pounds} pounds| `
-    }else {
+    } else {
         massTxt1 = `${kilo} kilo = ${pounds} pound | `
     }
     if (pound2 > 1) {
         massTxt2 = `${pound2} pounds = ${kilo2} kilos`
-    }else {
+    } else {
         massTxt2 = `${pound2} pound = ${kilo2} kilo`
     }
     massTxt.innerHTML = massTxt1 + massTxt2
