@@ -16,88 +16,99 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 30px 20px;
 }
 
 .container {
-    width: 550px;
+    width: 100%;
+    max-width: 680px;
     background-color: #1F2937;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .units-heading {
-    width: 550px;
+    width: 100%;
     background-color: #6943FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 20px;
+    padding: 35px 25px;
 }
 
 .units-heading h1 {
-    width: 448.4px;
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 25px;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 32px;
     color: #FFFFFF;
 }
 
 #input-el {
-    width: 117px;
-    height: 83px;
+    width: 140px;
+    height: 95px;
     margin-bottom: 25px;
-    border-radius: 5px;
-    border: 2px solid #B295FF;
+    border-radius: 8px;
+    border: 3px solid #B295FF;
     background-color: transparent;
     color: #FFFFFF;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 64px;
     text-align: center;
     outline: none;
 }
 
 #btn-el {
-    width: 117px;
-    height: 42px;
+    width: 140px;
+    height: 48px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
     color: #3B3B3B;
+    transition: background-color 0.2s ease;
+}
+
+#btn-el:hover {
+    background-color: #F0F0F0;
 }
 
 .units {
-    padding: 25px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 22px;
 }
 
 .units .length,
-.volume,
-.mass {
-    width: 500px;
-    border-top-left-radius: 4.68px;
+.units .volume,
+.units .mass {
+    width: 100%;
+    border-radius: 8px;
     background-color: #273549;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 22px 15px;
+    min-height: 95px;
 }
 
 .units h1 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     color: #CCC1FF;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .units p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #FFFFFF;
 }
