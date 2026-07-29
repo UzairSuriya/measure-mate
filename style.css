@@ -20,7 +20,6 @@ body {
 
 .container {
     width: 550px;
-    /* height: 100vh; */
     background-color: #1F2937;
     overflow: hidden;
 }
@@ -81,7 +80,6 @@ body {
 .volume,
 .mass {
     width: 500px;
-    /* margin: 36px 25px 23.43px 25px; */
     border-top-left-radius: 4.68px;
     background-color: #273549;
     display: flex;
